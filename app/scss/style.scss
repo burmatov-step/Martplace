@@ -1,13 +1,130 @@
-html{
-    box-sizing: border-box;
-}
-*,
-*::before,
-*::after{
-    box-sizing: inherit;
+@import 'vars';
+@import 'global';
+
+
+
+.header__top{
+    background-color: #eef1f3;
+    &-inner{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    }
 }
 
-.box{
+.header__item{
     display: flex;
-    
+    justify-content: space-between;
+    align-items: center;
 }
+
+.header__btn{
+    a{
+        font-size: 14px;
+        color: #fff;
+        background-color: #0674ec;
+        padding: 12px 18px 10px;
+        border-radius: 25px;
+    }
+}
+
+.header__box{
+    display: flex;
+    align-items: center;
+    margin-right: 13px;
+    margin-left: 50px;
+    a{
+        padding-right: 19px;
+        margin-right: 18px;
+        path{
+            fill: #7e8fa1;
+        }
+    }
+}
+
+
+.header__user{
+    display: flex;
+    align-items: center;
+    img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+}
+
+.header__user-text{
+    margin-left: 22px;
+    margin-right: 12px;
+    color: #333;
+    font-weight: 500;
+    span{
+        display: block;
+        color: #0674ec;
+        margin-top: 5px;
+    }
+}
+
+.header__menu{
+    background-color: #fff;
+}
+
+.header__menu-inner{
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu__list{
+    li{
+        display: inline-block;
+        &+li{
+            margin-left: 30px;
+        }
+        a{
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 15px;
+            color: #333;
+        }
+    }
+}
+
+.header__menu-form{
+    max-width: 359px;
+    width: 100%;
+    position: relative;
+    input{
+        width: 100%;
+        outline: none;
+        border-radius: 25px;
+        height: 45px;
+        border: 1px solid #d9dfe5;
+        padding-left: 24px;
+        padding-right: 78px;
+        
+        
+    }
+    button{
+            position: absolute;
+            outline: none;
+            width: 70px;
+            height: 45px;
+            background-color: #0674ec;
+            border: none;
+            right: 0;
+            border-radius: 25px;
+            cursor: pointer;
+            
+            svg{
+                height: 15px;
+                path{
+                    fill: #fff;
+                }
+                
+            }
+        }
+
+}
+
